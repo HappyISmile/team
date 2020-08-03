@@ -1,0 +1,353 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	color: #1F2041;
+	font-size: 14px;
+	font-family: Montserrat;
+}
+
+.main-site{
+	max-width: 1440px;
+	width: calc(100%-94px);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto minmax(900px,auto) minmax(372px,auto) minmax(70px,auto);
+
+}
+
+.main-site .grid-item{
+	border: 1px solid #100;
+
+}
+
+.header{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px;
+
+
+}
+
+.top{
+	margin: 15px 0px 15px 140px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.top-menu {
+	/*flex-basis: 30%;*/
+	align-self: center;
+	color: #1F2041;
+}
+
+.top-menu ul{
+	display: flex;
+	/*justify-content: space-between;*/
+	flex-wrap: wrap;
+	list-style-type: none;
+	/*text-decoration-color: #1f2041;*/
+}
+
+.top-menu li{
+	/*color: #1F2041;*/
+	margin-right: 30px;
+
+}
+
+.header .top-comeIn{
+	
+}
+
+.top-menu-and-button{
+	display: flex;
+	justify-content: space-end;
+}
+
+h1 {
+	font-size: Quicksand;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 40px 30px 0 30px;
+
+}
+
+p {
+	font-weight: bold;
+	margin: 20px 0 5.44px 17px;
+}
+
+select {
+	line-height: 18px;
+	margin: 0 0 5.44px 17px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+button{
+	/*display: block;*/
+	border-radius: 22px;
+	border: 2px solid transparent;
+	font-size: 12px;
+	padding: 10px 20px;
+	/*box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);*/
+	/*background: none;*/
+	
+	/*border-image-source: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);*/
+	/*margin: 10% 0;
+	background-origin: border-box;
+    background-clip: content-box, border-box;*/
+    
+
+    /*border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: $color-black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+a{
+	text-decoration: none
+}
+*/
+}
+
+.top-comeIn {
+	margin-right: 30px;
+	font-weight: bold;
+	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	box-shadow: 2px 1000px 1px #fff inset;
+	color: #BC9CFF;
+	/*display: flex;
+	align-items: stretch;
+	justify-content: center;
+	background: none;*/
+}
+
+.top-registr{
+	color:#FFFFFF;
+	font-weight: bold;
+	margin-right: 140px;
+	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+
+.galery {
+	display: grid;
+	grid-template-columns: 1fr;
+	background: url(img/image3.png) no-repeat center center;
+}
+
+.search-num{
+	background: #fff;
+	width: 380px;
+	height: 374px;
+	margin: 140px;
+}
+
+.sel-lab {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.sel-date {
+	width: 150px;
+	height: 44px;
+	background: url(img/expand_more.png) no-repeat right #fff;
+    -webkit-appearance: none;
+    background-position-x: 115px;
+    text-align-last: center;
+    line-height: 18px;
+    color: #1F2041;
+    font-size: 14px;
+    font-family: Montserrat;
+
+
+}
+
+/*
+	Stylesheet for Tigra Calendar v5.0
+	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed) 
+	URL: http://www.softcomplex.com/products/tigra_calendar/
+
+	- all image paths are relative to path of stylesheet
+	- the styles below can be moved into the document or in existing stylesheet
+
+*/
+
+/* input box in default state */ 
+.tcalInput {
+	width: 150px;
+	height: 44px;
+	/*text-align: center;*/
+	background: url('img/expand_more.png') 94% 50% no-repeat;
+	/*padding-right: 20px;*/
+	font-family: Montserrat;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+	padding-left: 15px;
+	cursor: pointer;
+	margin-left: 15px; 
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+.tcalActive {
+	background-image: url('img/expand_more.png');
+}
+/* container of calendar's pop-up */
+#tcal {
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	width: 320px;
+	height: 369px;
+	background-color: white;
+	margin-left: 100px;
+	/*margin-top: 20px;
+	padding: 0 2px 2px 2px;*/
+	border: 1px solid rgba(31, 32, 65, 0.25);
+
+	-moz-box-shadow: 3px 3px 4px silver;
+	-webkit-box-shadow: 3px 3px 4px silver;
+	box-shadow: 3px 3px 4px silver;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+#tcalControls {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+#tcalControls td {
+	border-collapse: collapse;
+	border: 0;
+	padding: 20px;
+	padding-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	width: 16px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#tcalControls th {
+	border-collapse: collapse;
+	border: 0;
+	padding: 20px 0 30px 0;
+	/*font-size: 10px;*/
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: center;
+	/*font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;*/
+	white-space: nowrap;
+}
+/*#tcalPrevYear { display:none; background-image: url('img/prev_year.gif'); }*/
+#tcalPrevMonth {
+	margin: 20px; 
+	background-image: url('img/arrow_back.png'); 
+}
+#tcalNextMonth { background-image: url('img/arrow_forward.png'); }
+/*#tcalNextYear { background-image: url('img/next_year.gif'); }*/
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+	border-collapse: collapse;
+	/*border: 1px solid silver;*/
+	width: 100%;
+	height: 93%;
+}
+#tcalGrid th {
+	/*border: 1px solid silver;*/
+	border-collapse: collapse;
+	/*padding: 3px 0;*/
+	text-align: center;
+	/*font-family: Tahoma, Geneva, sans-serif;*/
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/*background-color: gray;*/
+	color: #BC9CFF;
+}
+#tcalGrid td {
+	vertical-align: middle;
+	color: rgba(31, 32, 65, 0.75);
+	border: 0;
+	border-collapse: collapse;
+	padding: 2px 0;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.5);
+	/*font-family: Tahoma, Geneva, sans-serif;*/
+	width: 14%;
+	/*font-size: 11px;*/
+	cursor: pointer;
+}		
+#tcalGrid td.tcalOtherMonth { color: rgba(31, 32, 65, 0.25); }
+/*#tcalGrid td.tcalWeekend { background-color: #ACD6F5; }*/
+#tcalGrid td.tcalToday { border: 1px solid red; }
+#tcalGrid td.tcalSelected { 
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius: 22px;
+	/*background-color: #FFB3BE;*/
+}		
