@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap" rel="stylesheet">
   <!-- <script src="script.js" type="text/javascript"></script> -->
   <script type="text/javascript" src="script.js"></script> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
   <!--[if lt IE 9]>
  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,21 +25,21 @@
 	<div class="main-site">
   		<div class="grid-item header">
   			<header class="grid-item">
-  				<div class="top">
+				<div class="top">
   					<div class="top-logo">
   						<a href="#">
   							<img src="img/Logo2.svg"/>
-  							
   						</a>
   					</div>
   					<div class="top-menu-and-button">
   						<div class="top-menu">
   							<ul>
   								<li><a href="#">О нас</a></li>
-  								<li><a href="#">Услуги</a></li>
-  								<li><a href="#">Вакансии</a></li>
+  								<li><a href="#">Услуги <i class="fas fa-angle-down"></i></a></li> 
+								<!-- <li><i class="fas fa-angle-down"></i></li>   -->
+								  <li><a href="#">Вакансии</a></li>
   								<li><a href="#">Новости</a></li>
-  								<li><a href="#">Соглашения</a></li>
+  								<li><a href="#">Соглашения <i class="fas fa-angle-down"></i></a></li>
   							</ul>
   						</div>
   						<!-- <div class="top-comeIn"> -->
@@ -47,7 +49,8 @@
   							<button class="top-registr">ЗАРЕГИСТРИРОВАТЬСЯ</button>
   						<!-- </div> -->
   					</div>
-  				</div>
+				  </div>
+				  
   			</header>
   		</div>
   		<div class="grid-item galery">
@@ -82,7 +85,7 @@
 							</div> -->
   						</form>
   					</div>
-  					<div>
+  					<div class="select-tcal">
   						<p>ВЫЕЗД</p>
   						<input type="data" name="date" class="tcal" value="ДД.ММ.ГГГГ"/>
 						<!-- <p>Выезд</p>
@@ -91,13 +94,14 @@
   							<option>Пункт 2</option>
 						</select> -->
 					</div>
-					<div>
+					<div class="select-count">
 						<p>ГОСТИ</p>
-						<select class="sel-date" value="Сколько гостей">
+						<select class="sel-count">
+							<option>Сколько гостей</option>
   							<option>ВЗРОСЛЫЕ</option>
   							<option>ДЕТИ</option>
   							<option>МЛАДЕНЦЫ</option>
-						</select> -->
+						</select>
 					</div>
 				</div>
   			</div>
